@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?BackgroundColor">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_wall_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adView"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_wall_details"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/transparent"
+        app:navigationIcon="@drawable/ic_keyboard_backspace_black_24dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+    <com.like.LikeButton
+        android:layout_marginRight="10dp"
+        android:id="@+id/button_wall_fav"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/toolbar_wall_details"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        app:anim_scale_factor="2"
+        app:circle_end_color="@color/colorAccent_Light"
+        app:circle_start_color="#FF0070"
+        app:dots_primary_color="@color/colorAccent_Light"
+        app:dots_secondary_color="#FF0070"
+        app:icon_size="30dp"
+        app:is_enabled="true"
+        app:like_drawable="@drawable/ic_bookmark"
+        app:unlike_drawable="@drawable/ic_bookmark2" />
+
+    <LinearLayout
+        android:id="@+id/down_arrow_he"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentRight="true"
+        android:paddingRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <include layout="@layout/down_arrow"/>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layout_op"
+        layout="@layout/layout_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

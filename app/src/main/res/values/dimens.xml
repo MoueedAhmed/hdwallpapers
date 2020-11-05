@@ -1,0 +1,20 @@
+<resources>
+
+    <!--genaral spacing-->
+    <dimen name="tabIndicatorHeight">4dp</dimen>
+
+    <dimen name="topHeight">290dp</dimen>
+    <dimen name="layoutTopHeight">295dp</dimen>
+    <dimen name="layoutTopImageHeight">200dp</dimen>
+    <dimen name="videoHeight">200dp</dimen>
+
+    <dimen name="relatedCardHeight">65dp</dimen>
+
+    <dimen name="newsGridHeight">180dp</dimen>
+    <dimen name="newsGridImageHeight">100dp</dimen>
+
+    <dimen name="dividerVert">14dp</dimen>
+    <dimen name="etsize">16sp</dimen>
+    <dimen name="etpadding">10dp</dimen>
+
+</resources>

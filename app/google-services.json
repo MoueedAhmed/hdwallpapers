@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1029809018648",
+    "firebase_url": "https://hdwallpapers-de1e9.firebaseio.com",
+    "project_id": "hdwallpapers-de1e9",
+    "storage_bucket": "hdwallpapers-de1e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029809018648:android:4dbce435d37e9e28a5f06d",
+        "android_client_info": {
+          "package_name": "com.ingenious.hdwallpapers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029809018648-ssu18hn1l91bctn003rpvbhdnc7ivtus.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZqPmLYVEZyMfj0fUx1b-E-EAWKJ2Ddd4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029809018648-ssu18hn1l91bctn003rpvbhdnc7ivtus.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

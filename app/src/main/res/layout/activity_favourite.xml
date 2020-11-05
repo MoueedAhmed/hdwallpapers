@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?BackgroundColor">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="?attr/BackgroundColor"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        app:title="@string/app_name"
+        app:titleTextColor="?attr/BackgroundTint"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs_fav_new"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="?attr/BackgroundColor"
+        ads:tabIndicatorColor="?attr/BackgroundTint"
+        ads:tabTextColor="?attr/BackgroundTint"
+        app:tabIndicatorHeight="3dp">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wallpapers" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gif" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_marginTop="3dp"
+        android:id="@+id/viewPager_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/adView_fav"
+        android:background="?attr/BackgroundColor"
+        android:backgroundTint="?attr/BackgroundColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewDK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3086168759507141/8554388691">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>
